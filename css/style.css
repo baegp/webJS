@@ -1,0 +1,548 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Yusei+Magic:regular);
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background-color: #f0F0F0;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #000000;
+}
+
+#home{
+    color: #007784;
+}
+
+.nav-bar{
+    z-index: 1000;
+    line-height: 16px;
+    font-weight: 700;
+    font-size: 13px;
+    background-color: #FFFFFF;
+    width: 100%;
+    position: fixed;
+}
+
+.nav-bar .logo, .menu , .mua-hang{
+    display: inline-block;
+}
+
+.menu-level-2{
+    display: none;
+}
+
+.item-menu-level-1{
+    display: inline-block;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 30px 10px 20px 10px;
+}
+
+#home{
+    border-bottom: 3px solid #007784;
+    margin-left: 10px;
+}
+
+.fa-search ,.fa-phone-alt, .fa-shopping-cart{
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.fa-search {
+    margin: 0px 20px 0px 0px;
+    color: #474748;
+    padding-bottom: 3px;
+}
+
+.fa-search:hover{
+    border-bottom: 3px solid #007784;
+}
+
+.item-menu-level-1 .title-item-menu-level-1:hover{
+    border-bottom: 3px solid #007784;
+    color: #007784;
+}
+
+#cc:hover{
+    border-bottom: 3px solid #007784;
+}
+
+.mua-hang .sdt, .gio-hang{
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+.mua-hang{
+    color: #000000;
+    float: right;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 25px 10px 20px 10px;
+    margin: 0px 100px 0px 0px;
+}
+
+.img-hang img:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.sdt{
+    padding: 5px 5px;
+    border-right: #474748;
+    border-right: 2px solid #474748;
+}
+
+.nav-bar .logo {
+    float: left;
+    font-size: 25px;
+    line-height: 25px;
+    padding: 25px 50px 30px 110px;
+}
+
+.logo a{
+    font-family: 'Yusei Magic';
+    color: #474748;
+}
+
+.nav-bar .logo span {
+    color: #F7B67f;
+}
+
+.title-item-menu-level-1{
+    padding-bottom: 3px;
+    color:#474748;
+}
+
+.item-menu-level-2 i{
+    font-size: 14px;
+    color: #000000;
+}
+   
+.khoi-1{
+    padding: 10px 10px 10px 10px;
+    float: left;
+}
+
+.khoi-1 h3{
+    padding-bottom: 30px;
+}
+
+.menu-level-2{
+    border: 1PX solid #ffffff;
+    position: absolute;
+    padding: 20px 0px 20px 100px;
+    left: 0;
+    background-color: #F5F0EA;
+    margin: 50px 0px 0px 0px;
+}
+
+.hang{
+    text-align: center;
+}
+
+.gio-hang a:hover{
+    color: #007784;
+}
+
+.sdt{
+    color: #000000;
+}
+
+.sdt a{
+    color: #474748;
+}
+
+.gio-hang a{
+    color: #474748;
+}
+
+.img-hang{
+    display: inline-block;
+    width: 20%;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.item-menu-level-2{
+    padding: 0px 0px 20px 0px;
+}
+
+.title-item-menu-level-2{
+    color: #474748;
+    margin-left: 10px;
+}
+
+.aa:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.title-item-menu-level-2:hover{
+    border-bottom: 3px solid #007784;
+    color: #007784;
+}
+
+
+/* ------------- slide -----------*/
+.slide{
+    width: 100%;
+    height: auto;
+}
+
+#slide-show{
+    padding-top: 80px;
+}
+
+/* ------------- xuat san pham- --------- */
+.sanPham{
+    font-size: 16px;
+    background-color: #f0f0f0;
+    margin-left:1.6% ;
+    border-radius: 7px;
+    border: 0px solid #555;
+    width: 23%;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 700;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.sanPham button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    outline: none;
+    margin-top: 10px;
+    float: right;
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #f7452e00;
+    border: 3px solid #007784;
+}
+
+#xuatSanPham h1{
+    margin: 50px 0px 20px 0px;
+    text-align: center;
+}
+
+#xuatSanPham{
+    margin: 0px 80px 50px 70px;
+}
+
+.sanPham .ten{
+    
+    font-size: 14px;
+    padding: 15px 0px 3px 0px;
+}
+
+.sanPham .gia{
+    color: #D65F6E;
+}
+
+.btn{
+    color: #007784;
+}
+
+.btnPrimary:hover{
+    background-color: #007784;
+    color: white;
+}
+
+#mark{
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 900px;
+    width: 100%;
+}
+
+.menu-level-1 i{
+    border: none;
+    background-color: #00000000;
+}
+
+/* -------------contact------------ */
+#contact{
+    background-color: #f5f8fa;
+}
+
+
+/* ------------------------footer----------------------- */
+#footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+    color: #a2a2a2;
+    width: 100%;
+    font-family: 'Yusei Magic';
+    font-size: 14px;
+}
+
+#footer a{
+    font-size: 14px;
+    color: #a2a2a2;
+}
+
+footer span:hover {
+    color: white;
+}
+
+
+/* popup  */
+
+
+.popup {
+    display: none;
+    position: fixed;
+    padding-top: 300px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    position: relative;
+    background-color: #fafafa00;
+    padding: 15px;
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    height: 500px;
+}
+
+.popup-content input {
+    background-color: #2e2e2e00;
+    border: 0;
+    height: 50px;
+    width: 90%;
+    color: white;
+}
+
+.popup-content input:focus {
+    border: 0;
+    outline: none;
+}
+
+.close-btn {
+    float: right;
+    color: #ddd;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: -300px;
+    margin-right: -230px;
+}
+
+.close-btn:hover {
+    color: #D2D2D2;
+}
+
+.khoitim {
+    border: 1px solid beige;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+
+}
+
+.khoitim button{
+    background-color: rgba(221, 221, 221, 0);
+    border: none;
+}
+
+.khoitim .fa-search{
+    color: #f0f2f5;
+}
+
+.sao{
+    color: #d26e4b;
+}
+
+.contact{
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 20px 110px 20px 110px;
+}
+
+.ins{
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 13px;
+    border: 3px solid #f1f1f1;
+    outline: none;
+    color: #f1f1f1;
+    padding: 10px;
+}
+
+.ins:hover{
+    background-color: #ffffff;
+    color: #666666;
+}
+
+.page{
+    line-height: 20px;
+    border: 3px solid #ffffff;
+    font-weight: 700;
+    font-size: 13px;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    color: #666666;
+    margin-right: 10px;
+}
+
+.page:hover{
+    background-color: #555;
+    color: #ffffff;
+}
+
+.contact h1{
+    margin-top: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+
+.contact p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #f1f1f1;
+}
+
+.contact{
+    text-align: center;
+}
+
+.lienHe{
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* -------------------------- support ------------------- */
+
+.color{
+    background-color: #fafafa;
+}
+
+.container-sp{
+    display: flex;
+    padding: 20px;
+    font-family: 'Montserrat';
+    margin: 0px 70px 0px 40px;
+}
+
+.container-sp h2{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.container-sp p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.your-self a{
+    color:#007784 ;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.your-self li{
+    margin-left: 10px;
+}
+
+.your-self{
+    width: 50%;
+}
+
+.sp-left{
+    padding: 10px 50px 50px 50px;
+    width: 30%;
+}
+
+.sp-center{
+    width: 40%;
+    padding: 10px 20px 20px 20px;
+    display: flex;
+}
+
+.sp-right{
+    padding: 10px 20px 20px 20px;
+    width: 30%;
+}
+
+/* -------------- */
+
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #787878;
+    padding: 40px 0px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.menu-sap-xep{
+    padding: 10px 20px;
+}
+
+.sap-xep{
+    float:left ;
+    background-color: #ffffff;
+    margin-left: 110px;
+}
+
+.sap-xep li{
+    display: none;
+    padding: 10px 0px 0px 0px;
+}
+
+.sap-xep ul:hover li{
+    display: block;
+    padding: 10px 0px 0px 10px;
+}
+
+.sap-xep li:hover{
+    text-decoration: underline;
+}
+
+.title h1{
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.menu-sap-xep a{
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+}

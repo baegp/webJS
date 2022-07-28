@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f20d460fd9.js" crassarigin="anonymou"></script>
+    <title>Admin</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="nav-bar">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">
+                        <h1><span>GP</span> SHOP</h1>
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul class="menu-level-1">
+                        <li class="item-menu-level-1">
+                            <a href="#"> <i class="fas fa-search"></i></a>
+                            <a href="index.html" id="home" class="title-item-menu-level-1">HOME</a>
+                        </li>
+                        <li onclick="showMenu2()" class="item-menu-level-1">
+                            <a href="#" class="title-item-menu-level-1">DANH MỤC SẢN PHẨM</a>
+                            <i class="fas fa-angle-down"></i>
+                            <ul id="menu2-dssp" class="menu-level-2">
+                                <div class="khoi-1">
+                                    <h3>DANH MỤC SẢN PHẨM</h3>
+                                    <li class="item-menu-level-2">
+                                        <i class="fas fa-angle-right"></i>
+                                        <a href="#" class="title-item-menu-level-2">Đồ lưu niệm mixi</a>
+                                    </li>
+                                    <li class="item-menu-level-2">
+                                        <i class="fas fa-angle-right"></i>
+                                        <a href="#" class="title-item-menu-level-2">Áo mixi</a>
+                                    </li>
+                                    <li class="item-menu-level-2">
+                                        <i class="fas fa-angle-right"></i>
+                                        <a href="#" class="title-item-menu-level-2">Áo ba lỗ</a>
+                                    </li>
+                                    <li class="item-menu-level-2">
+                                        <i class="fas fa-angle-right"></i>
+                                        <a href="#" class="title-item-menu-level-2">Áo Refund Gaming</a>
+                                    </li>
+                                    <li class="item-menu-level-2">
+                                        <i class="fas fa-angle-right"></i>
+                                        <a href="#" class="title-item-menu-level-2">Áo PUBG</a>
+                                    </li>
+                                </div>
+                                <div class="hang">
+                                    <div class="img-hang">
+                                        <img src="https://cdn.tgdd.vn/Products/Images/42/228743/iphone-12-pro-max-vang-new-600x600-600x600.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="img-hang">
+                                        <img src="https://shop.mixigaming.com/wp-content/uploads/2021/01/binh-giu-nhiet-mixi-4-2048x1365.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="img-hang">
+                                        <img src="https://cdn.tgdd.vn/Products/Images/42/234308/samsung-galaxy-s21-ultra-256gb-den-600x600-1-600x600.jpg"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="item-menu-level-1">
+                            <a href="#" class="title-item-menu-level-1">THÔNG BÁO</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mua-hang">
+                    <div class="sdt">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="admin.html">ADMIN</a>
+                    </div>
+                    <div id="cc" class="gio-hang">
+                        <a href="../html/cart.html">GIỎ HÀNG</a>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="them-sp-fake">
+            <div class="container-sp">
+                <div class="content-them-sp">
+                    <h1>Danh sách sản phẩm</h1>
+                    <button onclick="clickShowAddSp()" class="btn btnPrimary">Thêm sản phẩm</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-left">
+            <div class="form">
+                <form action="" onsubmit="return false">
+                    <div id="pop-up-them-sp">
+                        <div id="out-them-sp" class="them-sp">
+                            <h1>Nhập thông tin sản phẩm</h1>
+                            <div class="form-group">
+                                <label for="img">Link hình ảnh</label>
+                                <input placeholder="Nhập link hình ảnh" type="url" name="" id="hinh-anh">
+                                <span class="form-message"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="ten">Tên sản phẩm</label>
+                                <input placeholder="Nhập tên sản phẩm" type="text" name="" id="ten-sp">
+                                <span class="form-message"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="gia">Giá sản phẩm</label>
+                                <input placeholder="Nhập giá sản phẩm" type="number" name="" id="gia-sp">
+                                <span class="form-message"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="hang">Hãng sản phẩm</label>
+                                <input placeholder="Nhập hãng sản phẩm" type="text" name="" id="hang-sp">
+                                <span class="form-message"></span>
+                            </div>
+
+                            <div class="khoi-button">
+                                <button class="btn btnPrimary btn-left" onclick="clickThemSp()">Tạo sản phẩm
+                                    mới</button>
+                                <button onclick="clickOutAddSanPham()" class="btn btnPrimary">Hủy</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="pop-up-sua-sp">
+                        <div class="sua-sp">
+                            <h1>Chỉnh sửa thông tin sản phẩm</h1>
+                            <label for="img">Link hình ảnh</label>
+                            <input type="text" name="" id="sua-hinh-anh">
+                            <label for="ten">Tên sản phẩm</label>
+                            <input type="text" name="" id="sua-ten-sp">
+                            <label for="gia">Giá sản phẩm</label>
+                            <input type="number" name="" id="sua-gia-sp">
+                            <label for="hang">Hãng sản phẩm</label>
+                            <input type="text" name="" id="sua-hang-sp">
+                            <div class="khoi-button">
+                                <button class="btn btnPrimary btn-left" onclick="clickCapNhatSp()">Lưu</button>
+                                <button onclick="clickHuySuaSanPham()" class="btn btnPrimary">Hủy</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="container-right">
+            <div class="timKiemSanPham">
+                <input type="text" name="" id="tim-sp">
+                <button class="btn btnPrimary" onclick="clickTimKiem()">Tìm kiếm</button>
+                <button class="btn btnPrimary" onclick="clickSapXepSpTangDan()">Sắp xếp tăng dần</button>
+                <button class="btn btnPrimary" onclick="ckickSapXepSpGiamDan()">Sắp xếp giảm dần</button>
+            </div>
+            <div id="danh-sach-sp">
+
+            </div>
+        </section>
+    </main>
+    <script src="../js/admin.js"></script>
+</body>
+
+</html>

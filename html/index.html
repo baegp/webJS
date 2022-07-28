@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GP SHOP</title>
+    <script src="https://kit.fontawesome.com/f20d460fd9.js" crassarigin="anonymou"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+</head>
+
+<body>
+    <header id="header">
+        <nav class="nav-bar">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">
+                        <h1><span>GP</span> SHOP</h1>
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul class="menu-level-1">
+                        <li class="item-menu-level-1">
+                            <i id="popup-btn"> <i class="fas fa-search"></i></i>
+                            <div class="popup">
+                                <div class="popup-content">
+                                    <a href="#"><span class="close-btn">&times;</span></a>
+                                    <div class="khoitim">
+                                        <input id="search" type="search" placeholder="Search">
+                                        <button onclick="clickTimKiem()"> <i class="fas fa-search"> </i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-menu-level-1">
+                            <a href="../html/index.html" id="home" class="title-item-menu-level-1">HOME</a>
+                        </li>
+                        <li onclick="showMenu2()" class="item-menu-level-1">
+                            <a href="#" class="title-item-menu-level-1">DANH MỤC SẢN PHẨM</a>
+                            <i class="fas fa-angle-down"></i>
+                            <ul id="menu2-dssp" class="menu-level-2">
+                                <div class="khoi-1">
+                                    <h3>DANH MỤC SẢN PHẨM</h3>
+                                    <li class="item-menu-level-2">
+                                        <i class="fas fa-angle-right"></i>
+                                        <a href="#" class="title-item-menu-level-2">Đồ lưu niệm mixi</a>
+                                    </li>
+                                    <li class="item-menu-level-2">
+                                        <i class="fas fa-angle-right"></i>
+                                        <a href="#" class="title-item-menu-level-2">Áo mixi</a>
+                                    </li>
+                                    <li class="item-menu-level-2">
+                                        <i class="fas fa-angle-right"></i>
+                                        <a href="#" class="title-item-menu-level-2">Áo ba lỗ</a>
+                                    </li>
+                                    <li class="item-menu-level-2">
+                                        <i class="fas fa-angle-right"></i>
+                                        <a href="#" class="title-item-menu-level-2">Áo Refund Gaming</a>
+                                    </li>
+                                    <li class="item-menu-level-2">
+                                        <i class="fas fa-angle-right"></i>
+                                        <a href="#" class="title-item-menu-level-2">Áo PUBG</a>
+                                    </li>
+                                </div>
+                                <div class="hang">
+                                    <div class="img-hang">
+                                        <img src="https://shop.mixigaming.com/wp-content/uploads/2021/01/VUVU7648-2048x1365.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="img-hang">
+                                        <img src="https://shop.mixigaming.com/wp-content/uploads/2021/01/binh-giu-nhiet-mixi-4-2048x1365.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="img-hang">
+                                        <img src="https://shop.mixigaming.com/wp-content/uploads/2021/01/2-2048x1366.jpg"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="item-menu-level-1">
+                            <a href="#" class="title-item-menu-level-1">THÔNG BÁO</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mua-hang">
+                    <div class="sdt">
+                        <i class="fas fa-user-cog"></i>
+                        <a href="../html/admin.html">ADMIN</a>
+                    </div>
+                    <div id="cc" class="gio-hang">
+                        <a href="../html/cart.html">GIỎ HÀNG</a>
+                        <a href="../html/cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="slide-show">
+            <div class="slide">
+                <img src="../img/mixi.jpg" alt="">
+            </div>
+        </section>
+
+        <div class="title">
+            <div class="sap-xep">
+                <ul class=" menu-sap-xep">
+                    <a href="#">Sắp xếp sản phẩm <i class="fas fa-angle-down"></i></a>
+                    <li onclick="sapXepTangDan()"><a href="#">Tăng dần theo giá</a></li>
+                    <li onclick="sapXepGiamDan()"><a href="#">Giảm dần theo giá</a></li>
+                </ul>
+            </div>
+            <div class="content-title-sp">
+                <h1>DANH SÁCH SẢN PHẨM</h1>
+            </div>
+        </div>
+        <section id="xuatSanPham">
+
+        </section>
+
+        <section class="contact">
+            <div data-aos="zoom-in-right" data-aos-duration="1000" id="particles-js" class="container-contact">
+                <div class="content-contact">
+                    <h1>GP Shop</h1>
+                    <p>Cập nhật thông tin về sản phẩm mới</p>
+                    <div class="lienHe">
+                        <a class="page" href="#"><span>FANFAGE</span></a>
+                        <a class="ins" href="#"><span>INSTAGRAM</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="support">
+            <div class="color">
+                <div class="container-sp">
+                    <div class="sp-left">
+                        <div class="thong-tin-web">
+                            <h2>Về chúng tôi</h2>
+                            <p>Website chính thức và duy nhất của MixiShop. Hiện tại chúng mình chỉ nhận đơn hàng trên
+                                website chứ không nhận bất kỳ nơi nào khác nhé!</p>
+                        </div>
+                    </div>
+
+                    <div class="sp-center">
+                        <div class="your-self">
+                            <h2>Danh mục sản phẩm</h2>
+                            <ul>
+                                <li><a href="#">Áo CSGO</a></li>
+                                <li><a href="#">Áo Mixi</a></li>
+                                <li><a href="#">Áo PUBG</a></li>
+                                <li><a href="#">Áo Refund Gaming</a></li>
+                                <li><a href="#">Đồ lưu niệm Mixi</a></li>
+                                <li><a href="#">Áo ba lỗ</a></li>
+                            </ul>
+                        </div>
+                        <div class="your-self">
+                            <h2>Thông tin</h2>
+                            <ul>
+                                <li><a href="#">Giới thiệu </a></li>
+                                <li><a href="#">Chính sách bảo mật</a></li>
+                                <li><a href="#">Điều khoản</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="sp-right">
+                        <h2>Hỗ trợ</h2>
+                        <p>Mọi thắc mắc và góp ý cần hỗ trợ xin vui lòng liên hệ Fanpage và Instagram</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer id="footer">
+        <a href="#">© Copyright HelpGuru. Powered by HeroThemes @ <span><strong>GP SHOP</strong></span></a>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+<script>
+    AOS.init();
+</script>
+
+</html>

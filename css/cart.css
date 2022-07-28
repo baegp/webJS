@@ -1,0 +1,365 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Yusei+Magic:regular);
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background-color: #f0f2f5;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #000000;
+}
+
+#home{
+    color: #007784;
+}
+
+.nav-bar{
+    line-height: 16px;
+    font-weight: 700;
+    font-size: 13px;
+    background-color: #ffffff;
+    width: 100%;
+    /* position: fixed; */
+}
+
+.nav-bar .logo, .menu , .mua-hang{
+    display: inline-block;
+}
+
+.menu-level-2{
+    display: none;
+}
+
+.item-menu-level-1{
+    display: inline-block;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 30px 10px 20px 30px;
+}
+
+#home{
+    border-bottom: 3px solid #007784;
+    margin-left: 10px;
+}
+
+.fa-search ,.fa-phone-alt, .fa-shopping-cart{
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.fa-search {
+    margin: 0px 20px 0px 0px;
+    color: #474748;
+    padding-bottom: 3px;
+}
+
+.fa-search:hover{
+    border-bottom: 3px solid #007784;
+}
+
+.item-menu-level-1 .title-item-menu-level-1:hover{
+    border-bottom: 3px solid #007784;
+    color: #007784;
+}
+
+#cc:hover{
+    border-bottom: 3px solid #007784;
+}
+
+.mua-hang .sdt, .gio-hang{
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+.mua-hang{
+    color: #000000;
+    float: right;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 25px 10px 20px 10px;
+    margin: 0px 100px 0px 0px;
+}
+
+.img-hang img:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.sdt{
+    padding: 5px 5px;
+    border-right: #474748;
+    border-right: 2px solid #474748;
+}
+
+.nav-bar .logo {
+    float: left;
+    font-size: 25px;
+    line-height: 25px;
+    padding: 25px 50px 30px 110px;
+}
+
+.logo a{
+    font-family: 'Yusei Magic';
+    color: #474748;
+}
+
+.nav-bar .logo span {
+    color: #F7B67f;
+}
+
+.title-item-menu-level-1{
+    padding-bottom: 3px;
+    color:#474748;
+}
+
+.item-menu-level-2 i{
+    font-size: 14px;
+    color: #000000;
+}
+   
+.khoi-1{
+    padding: 10px 10px 10px 10px;
+    float: left;
+}
+
+.khoi-1 h3{
+    padding-bottom: 30px;
+}
+
+.menu-level-2{
+    position: absolute;
+    padding: 20px 0px 20px 100px;
+    left: 0;
+    background-color: #ffffff;
+    margin: 33px 0px 0px 0px;
+}
+
+.hang{
+    text-align: center;
+}
+
+.gio-hang a:hover{
+    color: #007784;
+}
+
+.sdt{
+    color: #000000;
+}
+
+.sdt a{
+    color: #474748;
+}
+
+.gio-hang a{
+    color: #474748;
+}
+
+.img-hang{
+    display: inline-block;
+    width: 20%;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.item-menu-level-2{
+    padding: 0px 0px 20px 0px;
+}
+
+.title-item-menu-level-2{
+    color: #474748;
+    margin-left: 10px;
+}
+
+.aa:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.title-item-menu-level-2:hover{
+    border-bottom: 3px solid #007784;
+    color: #F7B67f;
+}
+
+#mark{
+    display: none;
+}
+
+/* dssp */
+
+.danh-sach-sp{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: auto;
+    max-width: 1100px;
+    background-color: #ffffff;
+}
+
+.danh-sach-sp input{
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #ddd;
+}
+
+.list-item-product{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item-product{
+    flex-basis: 20%;
+    text-align: center;
+    padding: 20px;
+}
+
+.danh-sach-sp h3{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+
+
+.san-pham-mua{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.san-pham-mua input{
+    max-width: 80px;
+    text-align: center;
+    padding: 3px 10px;
+}
+
+.item-sp{
+    flex-basis: 20%;
+    text-align: center;
+    padding: 20px;
+}
+
+.thanh-toan{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tt-thanh-toan{
+    flex-basis: 20%;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+/* thong tin khach hang */
+.container-khach-hang{
+    max-width: 1100px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+.container-khach-hang h1{
+    margin-bottom: 10px;
+}
+
+.form-khach-hang input{
+    width: 100%;
+}
+
+.form-khach-hang button{
+    margin-top: 10px;
+    padding: 10px 0px;
+    width: 100%;
+    outline: none;
+}
+
+.form-khach-hang input, label{
+    padding: 5px 0px;
+    margin-bottom: 10px;
+}
+.infor-khach-hang{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.infor-khach-hang input{
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+ .infor-khach-hang input:focus{
+    border: 1px solid #007784;
+}
+
+button{
+    border: 1px solid #DDD;
+}
+
+.btn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #f7452e00;
+    color: #007784;
+    border: 3px solid #007784;
+}
+
+.btnPrimary:hover{
+    background-color: #007784;
+    color: white;
+}
+
+.danh-sach-sp h1{
+    font-size: 16px;
+    color: #007784;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.infor-khach-hang h1{
+    font-size: 16px;
+    color: #007784;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.tien{
+    color: #F7452E;
+}
+
+.anh-san-pham img{
+    width: 50%;
+}
+
+.fa-trash-alt:hover{
+    color: #007784;
+}
+
+.infor-khach-hang input{
+    padding: 5px 5px;
+}

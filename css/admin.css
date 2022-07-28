@@ -1,0 +1,394 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Yusei+Magic:regular);
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background-color: #F0F0F0;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #000000;
+}
+
+#home{
+    color: #007784;
+}
+
+.nav-bar{
+    line-height: 16px;
+    font-weight: 700;
+    font-size: 13px;
+    background-color: #ffffff;
+    width: 100%;
+    position: fixed;
+}   
+.nav-bar .logo, .menu , .mua-hang{
+    display: inline-block;
+}
+
+.menu-level-2{
+    display: none;
+}
+
+.item-menu-level-1{
+    display: inline-block;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 30px 10px 20px 10px;
+}
+
+#home{
+    border-bottom: 3px solid #007784;
+    margin-left: 10px;
+}
+
+.fa-search ,.fa-phone-alt, .fa-shopping-cart{
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.fa-search {
+    margin: 0px 20px 0px 0px;
+    color: #474748;
+    padding-bottom: 3px;
+}
+
+.fa-search:hover{
+    border-bottom: 3px solid #007784;
+}
+
+.item-menu-level-1 .title-item-menu-level-1:hover{
+    border-bottom: 3px solid #007784;
+    color: #007784;
+}
+
+#cc:hover{
+    border-bottom: 3px solid #007784;
+}
+
+.mua-hang .sdt, .gio-hang{
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+.mua-hang{
+    color: #000000;
+    float: right;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 25px 10px 20px 10px;
+    margin: 0px 100px 0px 0px;
+}
+
+.img-hang img:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+.sdt{
+    padding: 5px 5px;
+    border-right: #474748;
+    border-right: 2px solid #474748;
+}
+
+.nav-bar .logo {
+    float: left;
+    font-size: 25px;
+    line-height: 25px;
+    padding: 25px 50px 30px 110px;
+}
+
+.logo a{
+    font-family: 'Yusei Magic';
+    color: #474748;
+}
+
+.nav-bar .logo span {
+    color: #F7B67f;
+}
+
+.title-item-menu-level-1{
+    padding-bottom: 3px;
+    color:#474748;
+}
+
+.item-menu-level-2 i{
+    font-size: 14px;
+    color: #000000;
+}
+
+
+
+/* ------------------ */
+
+.sanpham button{
+    width: 100%;
+}
+
+.container-left{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-right{
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    width: 100%;
+}
+
+.them-sp{
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+.them-sp input{
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #ddd;
+    display: block;
+    width: 100%;
+    padding: 2PX 0PX;
+}
+
+/* .them-sp .btn-left{
+    width: 30%;
+} */
+
+.them-sp label, input{
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+}
+
+button{
+    padding: 10px 20px;
+}
+
+.them-sp input:focus{
+    border: 1px solid #F7452E;
+}
+
+
+/* sua san pham */
+.sua-sp{
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+
+.sua-sp input{
+    border-radius: 3px;
+    padding: 2PX 0PX;
+    outline: none;
+    display: block;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.sua-sp input:focus{
+    border: 1px solid #F7452E;
+}
+
+.sua-sp button{
+    /* width: 10%; */
+    margin-bottom: 20px;
+}
+
+.sua-sp label, input{
+    margin-bottom:15px;
+}
+
+placeholder{
+    padding-left: 10px;
+}
+
+/* danh sach san pham */
+.sanpham{
+    background-color: #f0f0f0;
+    margin-left:1.6% ;
+    border-radius: 7px;
+    padding: 10px;
+    border: 0px solid #555;
+    width: 18%;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: Helvetica, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.hang{
+    margin-bottom: 10px;
+}
+
+.btn{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 3px solid #007784;
+    background-color: #00778400 ;
+    color: #007784;
+}
+
+.btnPrimary:hover{
+    background-color: #007784;
+    color:  white;
+}
+
+.timKiemSanPham{
+    margin-bottom: 20px;
+}
+
+
+.xoa{
+    margin-bottom: 5px;
+    float: right;
+    color: #007784;
+}
+
+.fa-trash-alt:hover{
+    color: #007784;
+}
+
+/* ------------------------------ */
+
+#pop-up-sua-sp{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100%;
+    display: none;
+}
+
+.sua-sp{
+    position: relative;
+    width: 50%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+#pop-up-sua-sp h1{
+    text-align: center;
+   padding: 20px 0px;
+    color: #007784;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------------------------- */
+.form label{
+    line-height: 18px;
+    color: #F7452E;
+    font-size: 14px;
+}
+
+.btn{
+    outline: none;
+}
+
+.form input{
+    padding: 5px 5px;
+}
+
+.sao{
+    color: #d26e4b;
+}
+
+#tim-sp{
+    margin-left: 20px ;
+    width: 300px;
+    outline: none;
+    padding: 5px 0px;
+    border: 3px solid #007784;
+}
+
+.timKiemSanPham{
+    margin-top: 10px;
+}
+
+.container-sp h1{
+    margin-left: 75px;
+}
+
+.them-sp-fake{
+    padding-top: 80px;
+}
+
+.content-them-sp{
+    background-color: #e5eeef;
+    padding: 30px;
+}
+
+.content-them-sp button{
+    margin-right: 80px;
+    margin-top: -30px;
+    width: 15%;
+    float: right;
+}
+
+/* -------------------- */
+#pop-up-them-sp{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100%;
+    display: none;
+}
+
+.them-sp{
+    position: relative;
+    width: 50%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+#pop-up-them-sp h1{
+    text-align: center;
+    padding: 20px 0px;
+    color: #007784;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.khoi-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn-left{
+    margin-right: 10px;
+}
+
+.hinhanh{
+    margin-bottom: 10px;
+}
+
+.gia{
+    color: #F7452E;
+}
+
+.mua-hang a{
+    color: #474748;
+}
